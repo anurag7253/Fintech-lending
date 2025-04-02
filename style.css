@@ -1,0 +1,506 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #28a745;
+    /* Green color from the image */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.actions .login {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.actions .apply {
+    background-color: #28a745;
+    color: white;
+}
+
+.hero {
+    background-color: #f0f8f5;
+    /* Light green background */
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Make it responsive */
+}
+
+.hero-content {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.hero-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hero-content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.hero-content ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+}
+
+.hero-content .buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.hero-content .buttons .apply-loan {
+    background-color: #28a745;
+    color: white;
+}
+
+.hero-content .buttons .explore {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.hero-image {
+    flex: 1 1 40%;
+    max-width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* fully responsive hero section code   */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px 0;
+        /* Adjust padding for mobile */
+    }
+
+    .container {
+        display: block;
+        /* Stack content vertically */
+        text-align: center;
+        /* Center text on mobile */
+    }
+
+    .hero-content {
+        width: 100%;
+        /* Full width on mobile */
+        margin-bottom: 20px;
+        /* Add space between content and image */
+    }
+
+    .hero-image {
+        width: 100%;
+        /* Full width image */
+    }
+
+    .hero-image img {
+        width: 100%;
+        /* Ensure image fills container */
+        height: auto;
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center buttons */
+    }
+
+    .buttons a {
+        width: 80%;
+        /* Button width on mobile */
+        margin: 5px 0;
+        /* Add spacing between buttons */
+        padding: 10px 15px;
+        /* Adjust button padding */
+        font-size: 0.9em;
+        /* Smaller font on mobile */
+        text-align: center;
+        /* Center button text */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        /* Smaller heading on mobile */
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+}
+
+.products {
+    padding: 80px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card i {
+    font-size: 2em;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    margin-bottom: 15px;
+}
+
+.product-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.product-card ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.product-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+}
+
+.product-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.how-it-works {
+    background-color: #f0f8f5;
+    padding: 80px 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.step i {
+    font-size: 2.5em;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.step h4 {
+    margin-bottom: 10px;
+}
+
+.credit-report {
+    padding: 80px 0;
+}
+
+.credit-report h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.credit-report p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.credit-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.credit-column {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-column i {
+    font-size: 2em;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.credit-column h3 {
+    margin-bottom: 15px;
+}
+
+.credit-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.credit-column ul li {
+    margin-bottom: 10px;
+}
+
+.cta {
+    background: linear-gradient(to bottom, #f0f8f5, #e0f2ef);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-logo h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    /* Slightly darker background for bottom */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Make it responsive */
+}
+
+.footer-legal a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header .container,
+    .hero .container,
+    .credit-columns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        margin-top: 20px;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content .buttons a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-legal {
+        margin-top: 15px;
+    }
+}
